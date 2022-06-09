@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/bit-error.wav-914635fb04f4735e804d8770832139b4.sample"
+
+[deps]
+
+source_file="res://sounds/bit-error.wav"
+dest_files=[ "res://.import/bit-error.wav-914635fb04f4735e804d8770832139b4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
