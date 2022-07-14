@@ -1,11 +1,6 @@
 extends Area2D
 
 
-
-## quando errar colocar algum som
-
-
-
 var flagNewPosition = false
 var contPoints = 0
 

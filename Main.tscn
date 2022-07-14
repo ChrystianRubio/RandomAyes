@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Circle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Circle.gd" type="Script" id=2]
 [ext_resource path="res://LabelPoints.gd" type="Script" id=3]
 [ext_resource path="res://Main.gd" type="Script" id=4]
 [ext_resource path="res://sounds/bit-error.wav" type="AudioStream" id=5]
+[ext_resource path="res://pictures/background.jpg" type="Texture" id=6]
 
 [node name="Main" type="Node2D"]
 script = ExtResource( 4 )
@@ -23,6 +24,15 @@ script = ExtResource( 2 )
 
 [node name="bit-error" type="AudioStreamPlayer" parent="Circle"]
 stream = ExtResource( 5 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+show_behind_parent = true
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 1.67, 1.57 )
+mouse_filter = 2
+input_pass_on_modal_close_click = false
+texture = ExtResource( 6 )
 
 [connection signal="input_event" from="Circle" to="Circle" method="_on_Area2D_input_event"]
 [connection signal="mouse_entered" from="Circle" to="Circle" method="_on_Area2D_mouse_entered"]
